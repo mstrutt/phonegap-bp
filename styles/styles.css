@@ -1,3 +1,33 @@
 body {
-	background: #CCC;
+	font-size: 18px;
+	font-family: arial;
+}
+
+button {
+	background: #f29925;
+	color: #FFF;
+	border: 0 none;
+	font-size: 1.5em;
+	padding: .5em;
+	border-radius: .5em;
+}
+
+button:active {
+	background: #f77913;
+	-webkit-transform: translateY(1px);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+a, 
+a:visited {
+	color: #f29925;
+	text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+	color: #f77913;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	text-decoration: underline;
 }
