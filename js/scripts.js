@@ -13,11 +13,15 @@ angular
 	.config(function($locationProvider, $routeProvider) {
 		$locationProvider.html5Mode(false);
 		$routeProvider.
-			when("/",  {templateUrl:'pages/index.html',  controller:false}).
-			when("/kitten",  {templateUrl:'/pages/kitten.html',  controller:false}).
-			when("/test",  {templateUrl:'/pages/test.html',  controller:false}).
+			when("/",  {templateUrl:'pages/index.html'}).
+			when("/kitten",  {templateUrl:'/pages/kitten.html',  controller:KittenCntl}).
+			when("/test",  {templateUrl:'/pages/test.html'}).
 			otherwise({redirectTo: '/'});
 	});
+
+function KittenCntl () {
+	console.log('kittens');
+}
 
 AppCntl.$inject = ['$scope', '$route']
 function AppCntl($scope, $route) {
