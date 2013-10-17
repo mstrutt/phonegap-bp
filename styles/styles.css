@@ -10,6 +10,7 @@ button {
 	font-size: 1.5em;
 	padding: .5em;
 	border-radius: .5em;
+	-webkit-transition: .1s;
 }
 
 button:active {
@@ -22,6 +23,7 @@ a,
 a:visited {
 	color: #f29925;
 	text-decoration: none;
+	-webkit-transition: .1s;
 }
 
 a:active,
