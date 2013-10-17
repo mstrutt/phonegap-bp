@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" ng-app="phonegapBP">
 	<head>
 		<meta charset="utf-8">
 
@@ -8,13 +8,18 @@
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="stylesheet" href="styles/styles.css" media="screen" />
+
 		<script src="phonegap.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.0-rc.3/angular-route.min.js"></script>
+    	<script src="http://code.angularjs.org/1.2.0-rc.3/angular-sanitize.min.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/testing.js"></script>
 	</head>
-<body>
+<body ng-controller="AppCntl">
 
-	<div id="content">This is the content</div>
-
+	<div id="content" ng-view></div>
+	<a href="#kitten">kitten</a>
+	<a href="#test">test</a>
 </body>
 </html>
