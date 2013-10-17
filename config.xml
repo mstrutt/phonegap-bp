@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id = "ZC98HXLPVZ.com.micros.shelldev"
+		version = "0.0.1">
+
+    <name>Phonegap BP</name>
+
+    <description>
+       Testing out a kind of boilerplate for making a snappy phonegap apps
+    </description>
+
+    <author email="uk-es-uxteam@micros.com">
+        MICROS eCommerce Studio
+	</author>
+
+	<!-- PLUGINS -->
+
+	<!-- ICONS -->
+        
+    <icon src="images/icons/icon.png" /> <!-- default 72 pixels -->
+        
+    <icon src="images/icons/ios/icon57.png" gap:platform="ios" width="57" height="57" /> <!-- iPhone 3G, 3GS, iPod Touch 2G, 3G -->
+    <icon src="images/icons/icon.png" gap:platform="ios" width="72" height="72" /> <!-- iPad 1, 2, iPad mini -->
+    <icon src="images/icons/ios/icon114.png" gap:platform="ios" width="114" height="114" /> <!-- iPhone 4, 4S, iPod Touch 4G -->
+        
+    <icon src="images/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" /> <!-- 36 pixels -->
+    <icon src="images/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" /> <!-- 48 pixels -->
+    <icon src="images/icons/icon.png" gap:platform="android" gap:density="hdpi" /> <!-- 72 pixels -->
+    <icon src="images/icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> <!-- 96 pixels -->
+        
+    <!-- SPLASH SCREENS -->
+        
+    <gap:splash src="images/splash/splash.png" /> <!-- default 320x480 pixels -->
+        
+    <gap:splash src="images/splash/splash.png" gap:platform="ios" width="320" height="480" /> <!-- iPhone 3G, 3GS, iPod Touch 2, 3 -->
+    <gap:splash src="images/splash/ios/splash640x960.png" gap:platform="ios" width="640" height="960" /> <!-- iPhone 4, 4S, iPod Touch 4 -->
+    <gap:splash src="images/splash/ios/splash640x1136.png" gap:platform="ios" width="640" height="1136" /> <!-- iPhone 5, iPod Touch 5 -->
+
+    <gap:splash src="images/splash/splash.png" gap:platform="android" gap:density="mdpi" />  <!-- 320x480 -->
+    <gap:splash src="images/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />  <!-- 480x800 -->
+    <gap:splash src="images/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />  <!-- 720x1280 -->
+        
+    <!-- GENERAL PREFERENCES -->
+        
+    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+
+    <!-- TODO Android PREFERENCES -->
+
+    <gap:platform name="android" />
+    <preference name="android-minSdkVersion" value="10" /> <!-- Min 2.3.3 -->
+
+    <!-- iOS PREFERENCES -->
+
+    <gap:platform name="ios" />        
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+
+    <!-- api access -->
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <access origin="*" subdomains="true" browserOnly="false" />
+
+    <!-- Features -->
+</widget>
